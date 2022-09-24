@@ -10,7 +10,7 @@ namespace Log
     {
         #region const
         public static string SPACE_TYPE { get; set; } = "\t";
-        public static string NEW_LINE { get; set; } = "\r\n";
+        public static string NEW_LINE { get; set; } = $"{Environment.NewLine}";
 
         public static string CONDITION_INFO { get; } = $"[INFO]{SPACE_TYPE}";
         public static string CONDITION_WARRING { get; } = $"[WARRING]{SPACE_TYPE}";

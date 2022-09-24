@@ -215,7 +215,7 @@ namespace Log
             }
             
             if (IsOutputTimeWrite) tmp = $"{DateTime.Now.ToString(OutputTimeFormat)}{Const.SPACE_TYPE}{tmp}";
-            text = $"{tmp}{text}{Const.NEW_LINE}";
+            text = $"{tmp}{text}";
             File.AppendAllText(FullPath, text);
             if (isConsoleWrite) System.Console.WriteLine(text);
 
